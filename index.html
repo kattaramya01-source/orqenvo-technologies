@@ -25,8 +25,8 @@
 <article class="card"><div class="icon">↗</div><h3>Business Trackers</h3><p>Keep routine information organised in a practical format.</p><ul><li>Inventory and order trackers</li><li>Invoice and expense sheets</li><li>Customer follow-up lists</li><li>Recruitment and task trackers</li><li>Data entry and document formatting</li></ul></article>
 </div></div></section>
 <section class="section" id="projects"><div class="wrap"><div class="sectionhead"><div class="eyebrow">Portfolio</div><h2>Demonstrations in progress.</h2><p class="intro">These are portfolio demo ideas, not client projects or claims of completed business results. A working sample will be linked here once it has been built and checked.</p></div><div class="grid">
-<article class="card project"><span class="chip">DEMO IN PROGRESS</span><h3>Sales Reporting Dashboard</h3><p>Example report to summarise revenue, profit, order volume and product performance using sample data.</p><p class="small">Planned tools: Excel · charts · KPI summaries</p></article>
-<article class="card project"><span class="chip">PLANNED DEMO</span><h3>Inventory Tracker</h3><p>A simple spreadsheet concept for recording stock, movements and items that need restocking.</p><p class="small">Planned tools: Excel · formulas · conditional formatting</p></article>
+<article class="card project"><span class="chip">SAMPLE DATA</span><h3>Sales Reporting Dashboard</h3><p>Example sales data to practise revenue, profit, order volume and product reporting. This is sample data, not client data.</p><p class="small">CSV file · Opens or downloads in a spreadsheet app</p><p><a class="btn secondary" href="./projects/sales-dashboard-sample.csv" download>Get sales sample ↗</a></p></article>
+<article class="card project"><span class="chip">SAMPLE DATA</span><h3>Inventory Tracker</h3><p>Example stock records to practise tracking stock levels and reorder points. This is sample data, not client data.</p><p class="small">CSV file · Opens or downloads in a spreadsheet app</p><p><a class="btn secondary" href="./projects/inventory-tracker-sample.csv" download>Get inventory sample ↗</a></p></article>
 <article class="card project"><span class="chip">PLANNED DEMO</span><h3>Customer Follow-up Tracker</h3><p>A structured list for tracking enquiries, contact status, next actions and follow-up dates.</p><p class="small">Planned tools: Excel · data validation · filters</p></article>
 </div></div></section>
 <section class="section" id="about"><div class="wrap split"><div><div class="eyebrow">About Orqenvo</div><h2>Practical work, honest communication.</h2><p class="intro">Orqenvo Technologies is an emerging independent technology services initiative focused on spreadsheet reporting, simple websites and business productivity tools. We aim to make small digital tasks clearer and easier to manage.</p><p class="intro">We are building our portfolio through demonstrations and carefully scoped projects. We do not claim client results or testimonials that we cannot verify.</p></div><div class="principles"><h3>How we work</h3><ul><li>Understand the problem first</li><li>Confirm deliverables and timing</li><li>Use sample data for demonstrations</li><li>Keep client information confidential</li><li>Share progress and request feedback</li></ul></div></div></section>
@@ -34,5 +34,22 @@
 <section class="section contact" id="contact"><div class="wrap contactbox"><div><div class="eyebrow">Contact</div><h2>Have a small project in mind?</h2><p class="intro">Send a short description of the task. Include the type of business, what you want improved, your deadline and any budget range. We can confirm whether it is a fit before agreeing to work.</p><div class="actions"><a class="btn primary" href="mailto:orqenvo.technologies@gmail.com?subject=Project%20Enquiry%20-%20Orqenvo%20Technologies&amp;body=Hello%20Orqenvo%20Technologies%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A%0AProject%20type%3A%0AWhat%20I%20need%3A%0ATimeline%3A%0ABudget%20range%3A%0A%0AThank%20you.">Email about a project ↗</a></div></div><div class="emailbox"><strong>Orqenvo Technologies</strong><a class="email" href="mailto:orqenvo.technologies@gmail.com">orqenvo.technologies@gmail.com</a><p class="note">For project enquiries, email is the best way to start. Please do not send passwords, payment-card details or confidential customer data in an initial message.</p><a href="#services" class="backtop">Review services ↑</a></div></div></section>
 </main>
 <footer><div class="wrap footrow"><span>© 2026 Orqenvo Technologies. Simple Ideas. Smarter Technology.</span><a class="backtop" href="#home">Back to top ↑</a></div></footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      const id = link.getAttribute("href");
+      const target = id && document.querySelector(id);
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (history.replaceState) history.replaceState(null, "", id);
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>

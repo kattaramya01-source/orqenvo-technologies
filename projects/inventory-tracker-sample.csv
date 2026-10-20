@@ -1,0 +1,6 @@
+SKU,Product,Category,Opening Stock,Stock In,Stock Out,Current Stock,Reorder Level
+SKU-001,Notebook,Stationery,40,20,18,42,15
+SKU-002,Pen Set,Stationery,55,10,30,35,20
+SKU-003,Desk Lamp,Electronics,18,5,7,16,8
+SKU-004,USB Cable,Accessories,25,0,19,6,10
+SKU-005,Water Bottle,Accessories,30,12,9,33,12
